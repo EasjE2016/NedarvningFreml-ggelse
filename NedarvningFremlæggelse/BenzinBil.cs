@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace NedarvningFremlæggelse
 {
-    class Program
+    public class BenzinBil : Bil
     {
-        static void Main(string[] args)
+        public BenzinBil(int pris) : base(pris)
         {
-            //Bil nyBil = new Bil(200000);
+        }
 
-
-
+        public override int Afgift()
+        {
+            throw new NotImplementedException();
         }
     }
 }
